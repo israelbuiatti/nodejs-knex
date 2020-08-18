@@ -10,5 +10,6 @@ routes.get('/list', userController.list);
 routes.get('/get', userController.get);
 routes.get('/create', userController.create);
 routes.get('/native', userController.native);
+routes.get('/returnModel', userController.returnModel);
 
 export default routes;

@@ -1,4 +1,5 @@
 import knex from '../../database';
+import User from '../models/User';
 
 export default class UsersController {
 
@@ -36,6 +37,14 @@ export default class UsersController {
 
 		return res.json(results.rows);
 		
+	}
+
+	returnModel(req, res) {
+
+		const model = new User();
+
+		return res.json(model);
+
 	}
 
 }
