@@ -1,7 +1,6 @@
 import knex from '../../database';
 
-export default {
-
+export default class UsersController {
 
 	async list(req, res) {
 
@@ -9,7 +8,7 @@ export default {
 
 		return res.json(results);
 
-	},
+	}
 
 	async get(req, res) {
 
@@ -17,7 +16,7 @@ export default {
 
 		return res.json(results);
 
-	},
+	}
 
 	async create(req, res) {
 
@@ -29,7 +28,7 @@ export default {
 
 		return res.json(null);
 		
-	},
+	}
 
 	async native(req, res) {
 
@@ -39,4 +38,4 @@ export default {
 		
 	}
 
-};
+}

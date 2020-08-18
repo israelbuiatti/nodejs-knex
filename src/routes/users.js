@@ -4,10 +4,11 @@ import UserController from '../app/controllers/UserController';
 
 
 const routes = Router();
+const userController = new UserController();
 
-routes.get('/list', UserController.list);
-routes.get('/get', UserController.get);
-routes.get('/create', UserController.create);
-routes.get('/native', UserController.native);
+routes.get('/list', userController.list);
+routes.get('/get', userController.get);
+routes.get('/create', userController.create);
+routes.get('/native', userController.native);
 
 export default routes;
